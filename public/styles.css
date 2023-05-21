@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto ;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.node {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 288px;
+  margin: 16px;
+  float: left;
+  position: relative; /* Add position relative for the connection line */
+}
+
+.node h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.node p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.node button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-node {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-node input,
+form.create-node textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-node button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.node-connection {
+  position: absolute;
+  height: 2px;
+  background-color: #ccc;
+  z-index: -1; /* Set z-index to be behind the nodes */
+}
+
+.node-grid {
+  display: grid;
+  grid-template-columns: 0fr repeat(1, 0fr);
+  padding: 60px 0px 0px 71px;
+}
+
+.popup-line {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the Node component */
+.node {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.node-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.node-content {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.node-actions {
+  display: flex;
+  align-items: center;
+}
+
+.node-actions > * {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Styles for the NodeConnection component */
+.node-connection {
+  position: absolute;
+  background-color: #ccc;
+  height: 2px;
+}
+
+.node:nth-child(3) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
