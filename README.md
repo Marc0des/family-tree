@@ -1,4 +1,4 @@
-Family Tree App
+Family Tree
 
 The Family Tree App is a web application built with React that allows users to create and visualize their family tree. Users can add family members as nodes, connect them, and provide relevant information such as names, birthdates, and family relationships. The app provides an intuitive interface for managing family relationships and navigating the family tree.
 
